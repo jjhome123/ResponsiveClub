@@ -2,154 +2,198 @@ html {
     font-size: 16px;
 }
 
-body {
-    background-image: url("media/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
-    font-family: "PT Sans";
+@media only screen and (min-width: 1px) {
+    body {
+        background-image: url("media/background.jpg");
+        font-family: "PT Sans";
+    }
+    
+    .inner-body {
+        background-color:white;
+        width: 70%;
+        height: auto;
+        margin: 4% auto;
+        padding: 1em;
+    }
+    
+    .banner {
+        display: flex;
+        border: 1px solid black;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("media/beach.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        height: 250px;
+    }
+    
+    .banner h1 {
+        color: whitesmoke;
+        font-family: "Quicksand";
+        font-size: 5vw; 
+        font-weight: 400;
+    }
+    
+    .meeting-times {
+        border: 3px dotted black;
+        width: 25%;
+        padding: 0 0.5em;
+        margin: 1em 0;
+        color: whitesmoke;
+        opacity: 0.95;
+        text-align: center;
+    }
+    
+    .meeting-times h3 {
+        text-align: left;
+        margin-left: 0.5em;
+    }
+
+    .meeting-times p {
+        font-size: 1.3vw;
+        background-color: rgba(255, 186, 57, 0.8);
+        color: black;
+    }
+    
+    .nav {
+        border: 1px solid black;
+        width: 98%;
+        margin: 1em auto;
+    }
+    
+    .nav-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 1em;
+        width: 90%;
+        margin: 1em auto;
+        list-style-type: none;
+    }
+
+    .nav-items li a{
+        font-weight: 700;
+    }
+
+    .welcome {
+        display: grid;
+        grid-template: 1fr 1fr / auto;
+        grid-gap: 1em;
+    }
+    
+    .welcome-item-1 {
+        border: 1px solid black;
+        padding: 0 1em;
+        border-radius: 1em;
+    }
+    
+    .welcome-item-1 p {
+        font-size: 1.3em;
+    }
+    
+    .welcome-item-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .testimonials {
+        display: grid;
+        margin: 1.5em 0;
+    }
+    
+    .test-item {
+        display: flex;
+        margin: 1em;
+        background-color: rgb(255, 157, 140);
+        border-radius: 1em;
+        align-items: center;
+    }
+    
+    .test-item p {
+        margin: 0.5em 1em;
+        font-size: 4vw;
+        color:whitesmoke;
+        font-style: italic;
+    }
+    
+    .person {
+        width: 25%;
+        text-align: center;
+        font-size: 1vw;
+        color:aliceblue;
+        text-shadow: 1px 1px black;
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        border-right: 4px dashed white;
+        padding: 0 2em;
+    }
+    
+    .person img {
+        border: 8px dashed white;
+        border-radius: 50%;
+        width: 125px;
+        height: 125px;
+        margin-top: 1em;
+    }
+    
+    .person h2 {
+        font-size: 1.5vw;
+        margin-top:0.5em;
+        margin-bottom: 0.1em;
+    }
+    
+    .person p {
+        font-size: 1.4vw;
+    }
+    
+    .location {
+        display: grid;
+        grid-template-rows: 3fr 2fr;
+        grid-gap: 1em;
+    }
+    
+    .map {
+        display: flex;
+        border: 2px dashed black;
+        align-items: center;
+    }
+    
+    .address {
+        border: 1px solid black;
+        width: auto;
+        padding: 0 0.5em;
+        margin: 1em 0;
+    }
+    
+    .address p {
+        font-size: 2vw;
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.inner-body {
-    background-color:white;
-    width: 70%;
-    height: auto;
-    margin: 4% auto;
-    padding: 1em;
+@media only screen and (min-width: 700px) {
+    .location {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .address p {
+        font-size: 1.5vw;
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.banner {
-    display: flex;
-    border: 1px solid black;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url("media/beach.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    height: 250px;
-}
-
-.banner h1 {
-    color: whitesmoke;
-    font-family: "Quicksand";
-    font-size: 5vw; 
-    font-weight: 400;
-}
-
-.meeting-times {
-    border: 1px dotted whitesmoke;
-    width: 25%;
-    padding: 0 0.5em;
-    margin: 1em 0;
-    color: whitesmoke;
-    opacity: 0.95;
-    text-align: center;
-}
-
-.meeting-times p {
-    font-size: 1.3vw;
-}
-
-.nav {
-    border: 1px solid black;
-    display: flex;
-    width: 95%;
-    margin: 1em auto;
-}
-
-.nav-items {
-    display: flex;
-    padding: 0; 
-    justify-content: space-around;
-    width: 100%;
-    list-style-type: none;
-}
-
-.welcome {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-}
-
-.welcome-item-1 {
-    border: 1px solid black;
-    padding: 0 1em;
-    border-radius: 1em;
-}
-
-.welcome-item-1 p {
-    font-size: 1.3vw;
-}
-
-.welcome-item-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-.testimonials {
-    display: grid;
-    margin: 1.5em 0;
-}
-
-.test-item {
-    display: flex;
-    margin: 1em;
-    background-color: rgb(255, 157, 140);
-    border-radius: 1em;
-    align-items: center;
-}
-
-.test-item p {
-    margin: 0.5em 1em;
-    font-size: 3em;
-    color:whitesmoke;
-    font-style: italic;
-}
-
-.person {
-    width: 25%;
-    text-align: center;
-    font-size: 1vw;
-    color:aliceblue;
-    text-shadow: 1px 1px black;
-    min-width: 150px;
-    max-width: 150px;
-    min-height: 150px;
-    border-right: 4px dashed white;
-    padding: 0 2em;
-}
-
-.person img {
-    border: 8px dashed white;
-    border-radius: 50%;
-    width: 125px;
-    height: 125px;
-    margin-top: 1em;
-}
-
-.person h2 {
-    font-size: 1.2vw;
-    margin-top:0.5em;
-    margin-bottom: 0.1em;
-}
-
-.person p {
-    font-size: 0.9em;
-}
-
-.location {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 1em;
-}
-
-.map {
-    border: 2px dashed black;
-}
-
-.address {
-    border: 1px solid black;
-    width: auto;
-    padding: 0 0.5em;
-    margin: 1em 0;
+@media only screen and (min-width:1000px) {
+    .welcome {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        grid-gap: 1em;
+    }
 }
